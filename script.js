@@ -27,7 +27,7 @@ const constraints = {
 };
 
 async function getDevices() {
-   document.getElementById('dev').innerHTML = await navigator.mediaDevices.enumerateDevices();
+   document.getElementById('dev').innerHTML = JSON.stringify(await navigator.mediaDevices.enumerateDevices())
 }
 
 const getCameraSelection = async () => {
