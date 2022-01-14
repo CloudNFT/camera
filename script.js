@@ -1,6 +1,6 @@
 feather.replace();
 
-const respon = document.querySelector('dev');
+const respon = document.getElementById('dev');
 const controls = document.querySelector('.controls');
 const cameraOptions = document.querySelector('.video-options>select');
 const video = document.querySelector('video');
