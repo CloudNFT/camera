@@ -1,0 +1,20 @@
+https://www.digitalocean.com/community/tutorials/front-and-rear-camera-access-with-javascripts-getusermedia-id
+
+{
+  video: {
+    width: {
+      min: 1280,
+      ideal: 1920,
+      max: 2560,
+    },
+    height: {
+      min: 720,
+      ideal: 1080,
+      max: 1440
+    },
+    facingMode: 'user'//depan
+    facingMode: {
+      exact: 'environment' //belakang
+    }
+  }
+}
