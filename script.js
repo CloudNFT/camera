@@ -1,5 +1,6 @@
 feather.replace();
 
+const respon = document.querySelector('dev');
 const controls = document.querySelector('.controls');
 const cameraOptions = document.querySelector('.video-options>select');
 const video = document.querySelector('video');
@@ -27,6 +28,7 @@ const constraints = {
 
 const getCameraSelection = async () => {
   const devices = await navigator.mediaDevices.enumerateDevices();
+  respon.innerHTML = devices
   const videoDevices = devices.filter(device => device.kind === 'videoinput');
   const options = videoDevices.map(videoDevice => {
       
