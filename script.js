@@ -23,6 +23,9 @@ const constraints = {
       ideal: 1080,
       max: 1440
     },
+    facingMode: {
+      exact: 'environment' //belakang
+    }
   }
 };
 
