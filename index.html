@@ -28,17 +28,11 @@
         <button class="btn btn-outline-success screenshot d-none" title="ScreenShot"><i data-feather="image"></i></button>
     </div>
 </div>
-<framesetrows = “20%,*”>
-<frame id=“banner”>
-        <select name="" id="" class="custom-select">
-            <option value="">Select camera</option>
-        </select>
-</frame>
-<framesetcols = “30%,*”>
-<frame id=“dev”>naviga</frame>
-<frame id=“content”>content</frame>
-</frameset>
-</frameset>
+    <div>
+         <canvas id="canvas" width=320 height=240></canvas> 
+         <video id="player" controls autoplay></video>
+         <button id="capture">Capture</button>            
+    </div>
 <script src="https://unpkg.com/feather-icons"></script>
 <script src="script.js"></script>
 </body>
