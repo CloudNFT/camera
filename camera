@@ -18,3 +18,18 @@ https://www.digitalocean.com/community/tutorials/front-and-rear-camera-access-wi
     }
   }
 }
+
+
+<video id="player" controls autoplay></video>
+<script>
+  const player = document.getElementById('player');
+
+  const constraints = {
+    video: true,
+  };
+
+  navigator.mediaDevices.getUserMedia(constraints)
+    .then((stream) => {
+      player.srcObject = stream;
+    });
+</script>
